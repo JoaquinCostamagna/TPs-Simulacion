@@ -16,6 +16,5 @@ namespace GeneracionDeNumerosAleatorios
         {
             InitializeComponent();
         }
-
     }
 }
