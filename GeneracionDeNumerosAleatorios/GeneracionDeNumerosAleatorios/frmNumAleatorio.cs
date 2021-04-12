@@ -38,6 +38,7 @@ namespace GeneracionDeNumerosAleatorios
                 }
                 btnProximo.Enabled = true;
                 deshabilitarCampos();
+                btnGenerarGrafico.Enabled = true;
 
             }
             else
@@ -191,6 +192,12 @@ namespace GeneracionDeNumerosAleatorios
             vectorXi = vectorXi1;
         }
 
+        private void btnGenerarGrafico_Click(object sender, EventArgs e)
+        {
+            frmGraficoChiCuadrado gcc = new frmGraficoChiCuadrado(dgvTabla);
+            gcc.Show();
+        }
+
         private void btnLineal_CheckedChanged(object sender, EventArgs e)
         {
             estrategia = new EstrategiaMixto();
@@ -237,6 +244,8 @@ namespace GeneracionDeNumerosAleatorios
             txtC.Enabled = false;
             txtX0.Enabled = false;
         }
+
+
         
     }
 }

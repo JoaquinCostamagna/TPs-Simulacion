@@ -29,7 +29,7 @@ namespace GeneracionDeNumerosAleatorios
         {
             double[] vector = new double[2];
             vector[1] = (a * xi) % m;
-            vector[0] = vector[1] / (m - 1);
+            vector[0] = vector[1] / (m);
             return vector;
 
         }

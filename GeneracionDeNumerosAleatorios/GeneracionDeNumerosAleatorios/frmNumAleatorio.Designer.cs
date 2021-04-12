@@ -52,6 +52,7 @@ namespace GeneracionDeNumerosAleatorios
             this.dgvTabla = new System.Windows.Forms.DataGridView();
             this.iteracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numAleatorio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnGenerarGrafico = new System.Windows.Forms.Button();
             this.titulo.SuspendLayout();
             this.ingresoDeNumeros.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -257,6 +258,7 @@ namespace GeneracionDeNumerosAleatorios
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnGenerarGrafico);
             this.panel1.Controls.Add(this.btnProximo);
             this.panel1.Controls.Add(this.dgvTabla);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -312,6 +314,17 @@ namespace GeneracionDeNumerosAleatorios
             this.numAleatorio.ReadOnly = true;
             this.numAleatorio.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
+            // btnGenerarGrafico
+            // 
+            this.btnGenerarGrafico.Enabled = false;
+            this.btnGenerarGrafico.Location = new System.Drawing.Point(555, 212);
+            this.btnGenerarGrafico.Name = "btnGenerarGrafico";
+            this.btnGenerarGrafico.Size = new System.Drawing.Size(132, 49);
+            this.btnGenerarGrafico.TabIndex = 2;
+            this.btnGenerarGrafico.Text = "Generar Grafico";
+            this.btnGenerarGrafico.UseVisualStyleBackColor = true;
+            this.btnGenerarGrafico.Click += new System.EventHandler(this.btnGenerarGrafico_Click);
+            // 
             // frmNumAleatorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -357,6 +370,7 @@ namespace GeneracionDeNumerosAleatorios
         private System.Windows.Forms.DataGridViewTextBoxColumn iteracion;
         private System.Windows.Forms.DataGridViewTextBoxColumn numAleatorio;
         private FontAwesome.Sharp.IconButton btnProximo;
+        private System.Windows.Forms.Button btnGenerarGrafico;
     }
 }
 
